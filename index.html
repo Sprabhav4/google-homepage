@@ -1,45 +1,75 @@
-<!DOCTYPE html>
-<style>
-    #profile{
-        border-radius: 50%;
-        height: 40px;
-        width: auto;
-    }
-    .navbar{
-        float: right;
-        align-items: flex-end;
-        top: 0px;
-    }
-    footer{
-        bottom 0px;
-    }
-</style>
+        <!DOCTYPE html>
+        <style>
+            #profile{
+                border-radius: 50%;
+                height: 40px;
+                width: auto;
+            }
+            .navbar{
+                display: flex;
+                float: right;
+                align-items: flex-end;
+                top: 0px;
+            }
+            footer{
+                overflow: hidden;
+                position: fixed;
+                padding: 20px;
+                bottom: 0;
+                width: 100%;
+                color: rgb(161, 154, 154);
+            }
+            .search{
+                height: 30px;
+                width: auto;
+                border-radius: 50%;
+                padding: 30px;
+                margin: 30px;
+                position: fixed;
+            }
 
-<html>
-    <head>
-        <title> Google homepage</title>
-    </head>
-    <body>
-        <div class="navbar">
-            <a href="gmail.com">Gmail</a>
-            <a href="#images">Images</a>
-            <img id="profile" src="https://www.tenforums.com/geek/gars/images/2/types/thumb_15951118880user.png" alt="profile">
+            #searchbar{
+                display: flex;
+                flex: 0 0 auto;
+                border-radius: 50px 50px 50px 50px;
+                border-color: hsl(grey,50%,50%);
+            }
+            
+            .links{
+                color: rgb(133, 142, 146);
+            }
+            .links:hover{
+                color: rgb(14, 128, 128);
+            }
+            
+        </style>
 
-        </div>
-        <div class="searchbar">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo">
-            <input type="text" id="searchbar" class="search">
-            <button type="submit">Submit</button>
-        </div>
-        <footer>
-            <a class="leftfoot" href="#about">About</a>
-            <a class="leftfoot" href="#advertising">Advertising</a>
-            <a class="leftfoot" href="#business">Business</a>
-            <a class="rightfoot" href="#privacy">Privacy</a>
-            <a class="rightfoot" href="#terms">Terms</a>
-            <a class="rightfoot" href="#settings">Settings</a>
+        <html>
+            <head>
+                <title> Google homepage</title>
+            </head>
+            <body>
+                <div class="navbar">
+                    <a class="links" href="gmail.com">Gmail</a>
+                    <a class="links" href="#images">Images</a>
+                    <img id="profile" src="https://www.tenforums.com/geek/gars/images/2/types/thumb_15951118880user.png" alt="profile">
 
-        </footer>
+                </div>
+                <div class="search">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo">
+                    <input type="text" id="searchbar" >
+                    <button type="submit">Search</button>
+                    <button type="submit">I'm Feeling Lucky</button>
+                </div>
+                <footer>
+                    <a class="leftfoot links" href="#about">About</a>
+                    <a class="leftfoot links" href="#advertising">Advertising</a>
+                    <a class="leftfoot links" href="#business">Business</a>
+                    <a class="rightfoot links" href="#privacy">Privacy</a>
+                    <a class="rightfoot links" href="#terms">Terms</a>
+                    <a class="rightfoot links" href="#settings">Settings</a>
 
-    </body>
-</html>
+                </footer>
+
+            </body>
+        </html>
