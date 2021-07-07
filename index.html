@@ -6,10 +6,14 @@
                 width: auto;
             }
             .navbar{
-                display: flex;
-                float: right;
-                align-items: flex-end;
                 top: 0px;
+                overflow: hidden;
+                float: right;
+                overflow: hidden;
+                position: fixed;
+                padding: 10px;
+                width: 100%;
+                color: rgb(161, 154, 154);
             }
             footer{
                 overflow: hidden;
@@ -20,17 +24,24 @@
                 color: rgb(161, 154, 154);
             }
             .search{
+                display: grid;
                 height: 30px;
                 width: auto;
                 border-radius: 50%;
                 padding: 30px;
                 margin: 30px;
                 position: fixed;
+                justify-items: center;
+            }
+            button{
+                justify-items: center;
             }
 
             #searchbar{
                 display: flex;
                 flex: 0 0 auto;
+                height: 30px;
+                width: 500px;
                 border-radius: 50px 50px 50px 50px;
                 border-color: hsl(grey,50%,50%);
             }
