@@ -1,86 +1,115 @@
-        <!DOCTYPE html>
-        <style>
-            #profile{
-                border-radius: 50%;
-                height: 40px;
-                width: auto;
-            }
-            .navbar{
-                top: 0px;
-                overflow: hidden;
-                float: right;
-                overflow: hidden;
-                position: fixed;
-                padding: 10px;
-                width: 100%;
-                color: rgb(161, 154, 154);
-            }
-            footer{
-                overflow: hidden;
-                position: fixed;
-                padding: 20px;
-                bottom: 0;
-                width: 100%;
-                color: rgb(161, 154, 154);
-            }
-            .search{
-                display: grid;
-                height: 30px;
-                width: auto;
-                border-radius: 50%;
-                padding: 30px;
-                margin: 30px;
-                position: fixed;
-                justify-items: center;
-            }
-            button{
-                justify-items: center;
-            }
+<!DOCTYPE html>
+<style>
+    #profile{
+        border-radius: 50%;
+        height: 40px;
+        width: auto;
+    }
+    .navbar{
+        display: flex;
+        overflow: hidden;
+        float: right;
+        overflow: hidden;
+        position: fixed;
+        padding: 10px;
+        width: 100%;
+        color: rgb(161, 154, 154);
+        justify-content:flex-end;
+        right: 10px;
+        align-content:flex-start;
+        flex-direction: row;
+        top: 0;
+    }
+    footer{
+        display: flex;
+        overflow: hidden;
+        position: fixed;
+        padding: 20px;
+        bottom: 0;
+        width: 100%;
+        color: rgb(161, 154, 154);
+        justify-content:center;
+        background-color: rgb(223, 223, 223);
+    }
+    .search{
+        display: flex;
+        padding: 30px;
+        margin: 30px;
+        align-items: center;
+        justify-content: center;
+        flex-direction:column;
+        overflow: hidden;
+    }
+    
 
-            #searchbar{
-                display: flex;
-                flex: 0 0 auto;
-                height: 30px;
-                width: 500px;
-                border-radius: 50px 50px 50px 50px;
-                border-color: hsl(grey,50%,50%);
-            }
-            
-            .links{
-                color: rgb(133, 142, 146);
-            }
-            .links:hover{
-                color: rgb(14, 128, 128);
-            }
-            
-        </style>
+    #searchbar{
+        display: flex;
+        height: 30px;
+        width: 500px;
+        border-radius: 50px 50px 50px 50px;
+        border-color: hsl(grey,50%,50%);
+    }
+    
+    .links{
+        color: rgb(133, 142, 146);
+        padding: 10px;
+    }
+    .links:hover{
+        color: rgb(9, 54, 54);
+    }
+    button{
+        display:flex;
+        flex-direction: row;
+        border: 0;
+        margin: 10px;
+        padding: 10px 20px 10px 20px;
+        line-height: 0px;
+        background-color: rgb(212, 212, 212);
+        color: rgb(70, 70, 70);
+        font: 1em "verdana",sans-serif;
+        border-radius: 50px 50px 50px 50px;
+    }
+    button:hover{
+        background-color: rgb(189, 189, 189);
+        color:rgb(43, 43, 43);
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+</style>
 
-        <html>
-            <head>
-                <title> Google homepage</title>
-            </head>
-            <body>
-                <div class="navbar">
-                    <a class="links" href="gmail.com">Gmail</a>
-                    <a class="links" href="#images">Images</a>
-                    <img id="profile" src="https://www.tenforums.com/geek/gars/images/2/types/thumb_15951118880user.png" alt="profile">
+<html>
+    <head>
+        <title> Google homepage</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <a class="links" href="gmail.com">Gmail</a>
+            <a class="links" href="#images">Images</a>
+            <img id="profile" src="https://www.tenforums.com/geek/gars/images/2/types/thumb_15951118880user.png" alt="profile">
+        </div>
+        
+        <div class="search">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo">
+            <input type="text" id="searchbar" >
+        
+            <div class="buttons">
+                <button type="submit">Search</button>
+                <button type="submit">I'm Feeling Lucky</button>
+            </div>
+        </div>
+        <footer>
+            <a class="leftfoot links" href="#about">About</a>
+            <a class="leftfoot links" href="#advertising">Advertising</a>
+            <a class="leftfoot links" href="#business">Business</a>
+            <a class="rightfoot links" href="#privacy">Privacy</a>
+            <a class="rightfoot links" href="#terms">Terms</a>
+            <a class="rightfoot links" href="#settings">Settings</a>
 
-                </div>
-                <div class="search">
-                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo">
-                    <input type="text" id="searchbar" >
-                    <button type="submit">Search</button>
-                    <button type="submit">I'm Feeling Lucky</button>
-                </div>
-                <footer>
-                    <a class="leftfoot links" href="#about">About</a>
-                    <a class="leftfoot links" href="#advertising">Advertising</a>
-                    <a class="leftfoot links" href="#business">Business</a>
-                    <a class="rightfoot links" href="#privacy">Privacy</a>
-                    <a class="rightfoot links" href="#terms">Terms</a>
-                    <a class="rightfoot links" href="#settings">Settings</a>
+        </footer>
 
-                </footer>
-
-            </body>
-        </html>
+    </body>
+</html>
